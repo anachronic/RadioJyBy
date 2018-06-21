@@ -1,0 +1,33 @@
+#+TITLE: Timeline for development in pomodoro-gamification application
+
+* Develop a very minimal timer-based CLI app for pomodoro
+  DEADLINE: <2018-06-26 Tue>
+
+* Develop a reading library for parameters needed by application
+  DEADLINE: <2018-06-26 Tue>
+
+  This could be somewhat tricky. Best I can't think of right now would be some sort of either =ini=-based or =conf=-based parsed filetype.
+
+* Move everything to electron for an GUI-based application
+  DEADLINE: <2018-07-10 Tue> SCHEDULED: <2018-07-03 Tue>
+
+  Goal here is to make a GUI-based application. No further development
+  should be needed as the previous steps should provide some sort of
+  lib-based implementation. I'm setting a =SCHEDULED= date because
+  this could be tricky to implement as I'm not really familiar with
+  Electron. This steps includes more goals which may or may not be
+  included in this step
+
+** Set a tray icon for easy control
+
+   Tray icon should be our "Mission Control" for the application. We
+   should also provide an icon with time left or elapsed time.
+
+* Workflow control
+  DEADLINE: <2018-07-17 Tue>
+
+  Workflow control should include these options:
+
+    - Snooze current pomodoro for 1-5 minutes
+    - Skip scheduled pause
+    - Measure time spent in breaks that should not be dedicated to breaks
