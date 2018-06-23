@@ -1,0 +1,155 @@
+* Objetivos de la Memoria
+
+El objetivo de esta memoria es evaluar el uso de pomodoro y los
+impactos que pueda tener implementar gamification en la técnica.
+
+Buscamos dos objetivos en este trabajo
+
+1. Una aplicación de pomodoro con elementos de Gamification
+2. Un estudio de la efectividad de pomodoro y gamification sobre flujos de trabajo.
+
+** Aplicación Pomodoro
+
+La aplicación que buscamos hacer necesita lo siguiente:
+
+- Timer de 25 minutos
+- Anuncio de pausas cortas (5min) y pausas largas (25-30min)
+- Snooze (alargue) de pausas o timer de 25 min de trabajo
+- Proveer estadísticas de uso (pomodoros cumplidos, snoozes y tiempos de descanso como *mínimo*)
+- Incorporación de elementos de gamification en forma de mensajes personales y dirigidos.
+
+** Mediciones y resultados del trabajo
+
+
+
+** Encuestas de Satisfacción
+
+* Applicaciones Parecidas
+
+Haremos una búsqueda en algunos repositorios conocidos y listaremos
+todas las aplicaciones que hay para pomodoro.
+
+En esta sección sólo listamos aquellas que estén relacionadas con
+cualquier funcionalidad que queramos cumplir dentro del
+proyecto. Idealmente incluiremos URL al proyecto
+
+** Arch Linux oficial y AUR
+
+Usamos la herramienta para el [[https://aur.archlinux.org/][AUR]], [[https://github.com/Jguer/yay][yay]].
+
+#+BEGIN_SRC sh
+yay -Ss pomodoro
+#+END_SRC
+
+Que nos entrega la salida:
+
+#+BEGIN_EXAMPLE
+aur/pomodairo 1.9-1 (+0 0.00%)
+    An Adobe Air application for working with the Pomodoro technique
+aur/ketchup-bin 0.1.0-4 (+0 0.00%)
+    a pomodoro timer using client <-> server architecture
+aur/i3-gnome-pomodoro-git r45.7e654f6-1 (+1 0.13%)
+    Integrate gnome-pomodoro into i3
+aur/omodoro-git r27.51574fd-2 (+1 0.00%)
+    Simple commandline tool to use the pomodoro technique
+aur/spt 0.4-1 (+1 0.00%)
+    Simple pomodoro timer that doubles your efficiency
+aur/ketchup-git 0.0.1-1 (+1 0.00%)
+    a pomodoro timer using client <-> server architecture
+aur/pomodoro-applet 1.0-1 (+1 0.00%) (Orphaned)
+    GNOME Panel applet for timing the intervals used in the Pomodoro Techinique(tm)
+aur/my-agile-pomodoro 4.1.1-1 (+2 0.00%) (Out-of-date 2016-05-09)
+    myAgilePomodoro - Time management software that brings you the best of Agile practices and the Pomodoro Technique, written in Java
+aur/pymodoro-git r101.0136d4c-1 (+3 0.47%)
+    Pomodoro for Xmobar or Dzen
+aur/tomatoapp-bzr r62-1 (+4 0.27%)
+    A simple pomodoro app designed for Elementary OS.
+aur/tomate-gtk 0.8.0-1 (+4 0.00%)
+    A timer for the Pomodoro Technique
+aur/python-tomate 0.8.0-1 (+5 0.00%)
+    A pomodoro timer
+aur/pomodoneapp 1.5.1320-1 (+9 0.01%)
+    Pomodoro timer for your favourite productivity tool
+aur/flow-pomodoro 1.2.0-4 (+10 0.60%)
+    A pomodoro app that blocks distractions while you work.
+aur/gnomato 1.1.0-3 (+11 0.01%) (Orphaned)
+    A timer for Pomodoro Technique
+aur/potato 6-1 (+11 0.02%)
+    A pomodoro timer for the shell
+aur/gnome-shell-pomodoro-git r945.f002440-3 (+14 0.00%)
+    A time management utility for GNOME based on the pomodoro technique
+aur/tomighty 0.7.2-1 (+51 0.31%)
+    Desktop timer for Pomodoro Technique users
+aur/gnome-shell-pomodoro 0.13.4-1 (+70 3.10%) (Installed)
+    A time management utility for GNOME based on the pomodoro technique
+#+END_EXAMPLE
+
+En una tabla se ve mejor:
+
+| Proyecto        | Descripción                                                                |
+|-----------------+----------------------------------------------------------------------------|
+| [[https://code.google.com/archive/p/pomodairo/][Pomodairo]]       | Aplicación en Adobe AIR para Pomodoro                                      |
+| [[https://github.com/jreinert/ketchup][Ketchup]]         | Implementación en Crystal de Pomodoro usando arq. cliente/servidor.        |
+| [[https://github.com/okraits/omodoro][Omodoro]]         | CLI para Pomodoro hecha en Python. Sólo funciona en shells                 |
+| [[https://github.com/pickfire/spt][spt]]             | Un timer simple de pomodoro (no tiene más datos)                           |
+| [[https://sourceforge.net/projects/mypomodoro/][myAgilePomodoro]] | Completo software de manejo de tiempo escrito en Java                      |
+| [[https://github.com/luizaugustomm/tomato][Tomatoapp]]       | Una aplicación simple para Pomodoro en ElementaryOS                        |
+| [[https://github.com/eliostvs/tomate-gtk][Tomate GTK]]      | Un timer simple para Pomodoro hecho en GTK                                 |
+| [[https://pomodoneapp.com/][PomoDoneApp]]     | Un timer Pomodoro para otras apps (Trello, Todoist, Evernote, entre otros) |
+| [[https://github.com/iamsergio/flow-pomodoro][Flow Pomodoro]]   | Un timer Pomodoro que bloquea distracciones                                |
+| [[https://github.com/diegorubin/gnomato][Gnomato]]         | Otro timer Pomodoro que incorporta listas [[https://zenhabits.net/zen-to-done-ztd-the-ultimate-simple-productivity-system/][ZTD]]                              |
+|                 |                                                                            |
+
+** Workrave
+
+** Open Source: Debian / * pomodoro *
+** Comercial
+** Definiciones
+   - Screen Block :: al fin de un periodo, la applicacion blockea el teclado y la ventana
+   - Timer 25mns :: la applicacion muestra un tiemo decreciente desde 25msn
+   -  ::
+* Funcionalidades
+** Features en proyectos ya existentes
+| Producto | Timer 25mns | Estadísticas | Screen Block | Snooze | Any gamification | Pausa larga |
+|----------+-------------+--------------+--------------+--------+------------------+-------------|
+| Workrave |             |              | X            |        |                  |             |
+|          |             |              |              |        |                  |             |
+|          |             |              |              |        |                  |             |
+|          |             |              |              |        |                  |             |
+** Deseos en la applicacion
+|   Prototipo | Timer 25mns | Timer por el dia | Screen Block | ... |
+|-------------+-------------+------------------+--------------+-----|
+|           1 |             |                  |              |     |
+|           2 |             |                  |              |     |
+|           3 |             |                  |              |     |
+| Extension A |             |                  |              |     |
+|           B |             |                  |              |     |
+
+* Recursos
+** Biblografia
+*** Pomodoro
+*** Flow
+*** Gamification
+** Open Source pomodoro
+** Codigo para tocar sonido / video
+** Protocolos para recibir / intercambiar archivos
+   - A la mano
+   - Cloud File Systems
+     - Dropbox
+     - Google Drive
+     - (...)
+   - Texting
+     - Telegram
+     - Whatsapp
+     - Mail
+** Encuestas de satisfaccion / eficiencia
+
+* Timeline
+    - Junio:
+      - [2018-06-19 Tue] Lista de aplicaciones similares o relacionadas en repositorios (e.g. Debian, arch, etc..)
+      - [2018-06-26 Tue 12:00-12:30] ENTREGA viosdvd
+    - Julio:
+      - [2018-07-03 Tue]
+      - [2018-07-05 Thu]-[2018-07-24 Tue] Viaje Jeremy
+    - Diciembre
+      - [2018-12-28 vie] Actualizar documentación del proyecto en git.
