@@ -8,8 +8,8 @@
   (CC6908). Todo el contenido de este documento debe ser incorporado
   al reporte final, pero siempre se debe considerar este documento
   como *apuntes*.
-  #+TITLE: Apuntes para factibilidad
 
+  Este documento se ve mucho mejor en [[https://github.com/anachronic/RadioJyBy/blob/master/SubProjects/pomodoro-gamification/feasibility-draft.org][github]].
 
 * Introducción
 

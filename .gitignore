@@ -45,3 +45,5 @@ captures/
 *.run.xml
 *.synctex.gz
 *.toc
+/SubProjects/pomodoro-gamification/feasibility-draft.tex
+/SubProjects/pomodoro-gamification/feasibility-draft.pdf
