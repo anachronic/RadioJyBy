@@ -133,12 +133,28 @@ implementarla en las plataformas deseadas de forma aparte.
 
 
 
-** Definiciones
-   - Screen Block :: al fin de un periodo, la applicacion blockea el teclado y la ventana
-   - Timer 25mns :: la applicacion muestra un tiemo decreciente desde 25msn
-   -  ::
 * Funcionalidades
 
+** Definiciones
+   - Timer 25 minutos :: La aplicación muestra un timer de 25 minutos
+        y lo contabiliza como un Pomodoro, esta feature es esencial
+        para pomodoro y se asume que nuestra aplicación la tendrá y
+        todas las otras aplicaciones también
+   - Estadísticas :: Muestra estadísticas de cualquier índole:
+                     Pomodoros diarios, Pomodoros por tarea, pomodoros
+                     tomados, pomodoros ignorados y/o interrupciones
+   - Screen Block :: Se bloquea la pantalla durante cualquier tipo de
+                     descanso
+   - Snooze :: Se puede alargar el tiempo de trabajo de un pomodoro a
+               voluntad del usuario
+   - Gamification :: La aplicación aplica gamification de cualquier
+                     tipo
+   - Pausa larga :: La aplicación anuncia pausas largas y las
+                    diferencia de las cortas
+   - Lista :: La aplicación contiene una lista de =Tareas por hacer
+              hoy=, según lo especificado en la técnica pomodoro
+
+** En aplicaciones analizadas
   A continuación se puede ver una matriz de funcionalidades en las
   apps antes descritas.
 
@@ -158,14 +174,13 @@ implementarla en las plataformas deseadas de forma aparte.
 | Ext. GNOME      | X            | X (GDM) | X      |              | X           |          |
 
 ** Deseos en la aplicación
-|   Prototipo | Timer 25mns | Timer por el dia | Screen Block | ... |
-|-------------+-------------+------------------+--------------+-----|
-|           1 |             |                  |              |     |
-|           2 |             |                  |              |     |
-|           3 |             |                  |              |     |
-| Extension A |             |                  |              |     |
-|           B |             |                  |              |     |
-
+|   Prototipo | Timer por el dia | Screen Block | ... |
+|-------------+------------------+--------------+-----|
+|           1 |                  |              |     |
+|           2 |                  |              |     |
+|           3 |                  |              |     |
+| Extension A |                  |              |     |
+|           B |                  |              |     |
 * Recursos
 ** Biblografia
 *** Pomodoro
