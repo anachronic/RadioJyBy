@@ -11,10 +11,6 @@
 
   Este documento se ve mucho mejor en [[https://github.com/anachronic/RadioJyBy/blob/master/SubProjects/pomodoro-gamification/feasibility-draft.org][github]].
 
-* Introducción
-
-  Este documento sirve para mantener apuntes a la hora de elaborar el informe final del curso de Introducción al trabajo de título (CC6908). Todo el contenido de este documento debe ser incorporado al reporte final, pero siempre se debe considerar este documento como *apuntes*.
-
 * Objetivos de la Memoria
 
 El objetivo de esta memoria es evaluar el uso de pomodoro y los
