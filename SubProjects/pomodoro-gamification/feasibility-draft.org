@@ -139,14 +139,23 @@ implementarla en las plataformas deseadas de forma aparte.
    -  ::
 * Funcionalidades
 
-  A continuación se puede ver una matriz de funcionalidades en las apps antes descritas.
+  A continuación se puede ver una matriz de funcionalidades en las
+  apps antes descritas.
 
-| Producto | Timer 25mns | Estadísticas | Screen Block | Snooze | Any gamification | Pausa larga |
-|----------+-------------+--------------+--------------+--------+------------------+-------------|
-| Workrave |             |              | X            |        |                  |             |
-|          |             |              |              |        |                  |             |
-|          |             |              |              |        |                  |             |
-|          |             |              |              |        |                  |             |
+  Asumiremos que todas las aplicaciones tienen el timer y no las
+  mostraremos si sólo cumplen con dicha función
+
+| Producto        | Estadísticas | Bloqueo | Snooze | gamification | Pausa larga | Lista    |
+|-----------------+--------------+---------+--------+--------------+-------------+----------|
+| Workrave        |              | X       |        |              |             |          |
+| Pomodairo       | X            |         |        |              |             | X        |
+| Omodoro         |              |         | X      |              | X           |          |
+| myAgilePomodoro | X            |         | X      |              | X           | X        |
+| Tomate Gtk      | X (sesiones) |         |        |              |             | X        |
+| PomoDoneApp     | X (apps)     |         |        |              |             | X (apps) |
+| Gnomato         |              |         |        |              | X           | X        |
+| Tomighty        | X (sesiones) |         | X      |              | X           |          |
+| Ext. GNOME      | X            | X (GDM) | X      |              | X           |          |
 
 ** Deseos en la aplicación
 |   Prototipo | Timer 25mns | Timer por el dia | Screen Block | ... |
