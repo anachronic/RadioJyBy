@@ -118,6 +118,17 @@ Los [[https://packages.debian.org/search?keywords=pomodoro&searchon=names&suite=
 
 ** Workrave
 
+[[http://www.workrave.org/][Workrave]] es un proyecto [[https://github.com/rcaelers/workrave][Open Source]] dedicado a minimizar [[https://es.wikipedia.org/wiki/Movimientos_repetitivos][Lesiones por
+movimiento repetitivo]], funciona forzando al usuario a pausar su flujo
+de trabajo cada cierto tiempo.
+
+Si bien no está dedicado a Pomodoro /per-se/, nos es útil en este
+trabajo por su característica de descanso. La aplicación contiene
+bloqueo de pantalla que nos puede ser increíblemente útil a la hora de
+tener que mostrarle pausas a los usuarios. En el peor de los casos,
+podemos reusar el código específico de esta funcionalidad aparte e
+implementarla en las plataformas deseadas de forma aparte.
+
 ** Comercial
 
 
@@ -127,7 +138,9 @@ Los [[https://packages.debian.org/search?keywords=pomodoro&searchon=names&suite=
    - Timer 25mns :: la applicacion muestra un tiemo decreciente desde 25msn
    -  ::
 * Funcionalidades
-** Features en proyectos ya existentes
+
+  A continuación se puede ver una matriz de funcionalidades en las apps antes descritas.
+
 | Producto | Timer 25mns | Estadísticas | Screen Block | Snooze | Any gamification | Pausa larga |
 |----------+-------------+--------------+--------------+--------+------------------+-------------|
 | Workrave |             |              | X            |        |                  |             |
@@ -154,23 +167,64 @@ Los [[https://packages.debian.org/search?keywords=pomodoro&searchon=names&suite=
 *** Flow
 *** Gamification
 ** Open Source pomodoro
+** Bibliotecas gráficas
+
+   Tenemos variadas:
+*** Móviles
+**** iOS
+
+     1. [[https://developer.apple.com/swift/][Swift]], nativo para iOS
+**** Android
+
+     1. [[https://developer.android.com/training/basics/firstapp/][Android Studio]]? Parece que es la forma de hacer aplicaciones móviles nativas
+**** Multiplataforma
+
+     1. [[https://facebook.github.io/react-native/][React Native]], framework multiplataforma basado en =React= y =Javascript=
+*** Escritorio
+
+    No caeremos en el juego de tratar de buscar nada multiplataforma
+    por la multiplicidad de opciones que existen en cada caso
+
+    1. [[https://www.qt.io/][Qt]], Framework multiplataforma para =C++=
+    2. [[https://electronjs.org/][Electron]], Framework multiplataforma para apps =Javascript=
+
 ** Codigo para tocar sonido / video
+
+*** Javascript
+    1. [[https://www.npmjs.com/package/audio5][Audio5js]]
+    2. [[https://howlerjs.com/][howler.js]]
+
+
+*** C++
+
+    1. [[http://www.portaudio.com/][PortAudio]]
+    2. Quedan más.. subcódigos VLC/Lollypop/Banshee/Amarok/etc..
+
 ** Protocolos para recibir / intercambiar archivos
-   - A la mano
-   - Cloud File Systems
-     - Dropbox
-     - Google Drive
-     - (...)
-   - Texting
-     - Telegram
-     - Whatsapp
-     - Mail
+
+*** Manualmente
+
+    Simplemente tocar archivos desde un directorio
+
+*** En la Nube
+
+    1. [[https://www.dropbox.com/][Dropbox]]
+    2. WebDAV ([[https://nextcloud.com/][NextCloud, ownCloud, etc...]])
+    3. iCloud
+    4. Google Drive
+
+*** Compartir desde otras apps.
+    1. Telegram
+    2. Whatsapp
+    3. Email
+    4. Notas de voz Android/iOS/macOS/GNOME/KDE
+
 ** Encuestas de satisfaccion / eficiencia
 
 * Timeline
     - Junio:
-      - [2018-06-19 Tue] Lista de aplicaciones similares o relacionadas en repositorios (e.g. Debian, arch, etc..)
-      - [2018-06-26 Tue 12:00-12:30] ENTREGA viosdvd
+      - [2018-06-26 mar] Lista de aplicaciones similares o relacionadas en repositorios (e.g. Debian, arch, etc..)
+      - [2018-06-26 Tue 12:00-12:30] Reunión semanal con Jeremy
     - Julio:
       - [2018-07-03 Tue]
       - [2018-07-05 Thu]-[2018-07-24 Tue] Viaje Jeremy
